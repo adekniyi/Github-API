@@ -22,12 +22,6 @@ input[type="text"] {
     text-transform: capitalize;
 }
 
-input[type="submit"] {
-    width: 15%;
-    height: 35px;
-    cursor: pointer;
-}
-
 .top-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

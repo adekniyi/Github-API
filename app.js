@@ -45,14 +45,13 @@ function getValue(e) {
 
     const card = document.querySelectorAll('.card1')
         //const name = document.getElementById('name')
-    console.log(name)
-    inputValue = input.value.trim();
+    inputValue = input.value.trim().toUpperCase();
     for (y = 0; y < card.length; y++) {
         let name = card[y].getElementsByTagName('h4')[0];
         if (name.innerHTML.toUpperCase().indexOf(inputValue) > -1) {
             card[y].style.display = ''
         } else {
-            card[y].style.display = 'block'
+            card[y].style.display = 'none'
         }
 
     }
